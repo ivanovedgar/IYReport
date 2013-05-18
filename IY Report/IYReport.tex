@@ -7,6 +7,7 @@
 \usepackage{hyperref}
 \usepackage{pdflscape} % dlia landscape orientation 
 \hypersetup{colorlinks,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black}
+\usepackage{float}
 
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -29,9 +30,9 @@ I worked in Aberystwyth University IS department. Whole university departments w
 
 I will describe how the IS looks like inside, mainly I will focus on the technical groups, but I will give a short overview of the other groups as well. On figure~\ref{fig:i-s-hierarchy-tree-march-2012} you can see IS hierarchy tree.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
-\centerline{\includegraphics[scale=0.5]{./i-s-hierarchy-tree-march-2012}}
+\centerline{\includegraphics[scale=0.55]{./i-s-hierarchy-tree-march-2012}}
 \caption{IS hierarchy tree}
 \label{fig:i-s-hierarchy-tree-march-2012}
 \end{figure}
@@ -58,16 +59,30 @@ The first point of contact for face-to-face and online IT enquiries for all Info
 There are also two other main groups called "Business Information Systems" and "Library Services". BIS are  responsible for development and support of the systems and processes required to maintain Admissions, Student Records, Finance, HR, Payroll and other associated business functions of the University. LS looks after all education materials: books, journals, articles as well as after education software systems like blackboard.
 
 \chapter{Technical environment}
-Pretend we know nothing! We need to get a feel for what people/ applications/
-hardware you support, your work environment , standard machine spec. I know some of
-you use Sunrise, reg, astra so if you don't describe these you'll lose marks. There
-will be others I have forgotten!
+When I just started my placement I was frustrated with amount of different software used in IS. At the beginning I was introduced to Interzone, Sunrise, Astra, Recall, Sharepoint, Aber FAQs, Outlook, Voyager. All used to store different information. In particular I still can not understand why do we have similar information on Sharepoint and Aber FAQs. Information about data projectors is kept on Sharepoint in simple Excel spreadsheet which can be altered by anyone. Room layout with computer serial numbers kept on one of the employees M drive and is accessible thru the web. So if Clares account will be locked for some reason, non of the workshop members will be able to access that data. Good example is PSR2 maintenace application which was clearly written by Clare for herself to make. On figure ~\ref{fig:main_PSR2_page} you can see PSR2 page, whic conatins some teaching rooms list that workshop technicians looks after.
 
-When I just started my placement I was frustrated with amount of different software used in IS. At the beginning I was introduced to Interzone, Sunrise, Astra, Recall, Sharepoint, Aber FAQs, Outlook, Voyager. All used to store different information. In particular I still can not understand why do we have similar information on Sharepoint and Aber FAQs. Information about data projectors is kept on Sharepoint in simple Excel spreadsheet which can be altered by anyone. Room layout with computer serial numbers kept on one of the employees M drive and is accessible thru the web. So if Clares account will be locked for some reason, non of the workshop members will be able to access that data. 
+\begin{figure}[H]
+\centering
+\centerline{\includegraphics[scale=0.3]{./PSR2}}
+\caption{Main PSR2 Page}
+\label{fig:main_PSR2_page}
+\end{figure}
+
+On the ~\ref{fig:PSR2_SU_Room_layout} you can see
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{./PSR2_SU_Room_layout}
+\caption{PSR2 Students Union Room Layout}
+\label{fig:PSR2_SU_Room_layout}
+\end{center}
+\end{figure}
+
+
 \section{Interzone}
 Interzone is a web based application that is used to manage records of network equipment in Aberystwyth University. On the main page you can see blank boxes in which you enter the information and search for record that contains specified information in it. You can search by IP address, MAC address, Owner's login, computer name etc. On the figure ~\ref{fig:main_interzone_page} you can see main Interzone page.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \centerline{\includegraphics[scale=0.5]{./main_interzone_page}}
 \caption{Main Interzone Page}
@@ -76,7 +91,7 @@ Interzone is a web based application that is used to manage records of network e
 
 On figure ~\ref{fig:machine_record} you can see Interzone record for my computer.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \centerline{\includegraphics[scale=0.5]{./machine_record}}
 \caption{Machine record}
@@ -85,7 +100,7 @@ On figure ~\ref{fig:machine_record} you can see Interzone record for my computer
 
 It contains various information about the owner, owners department, telephone number (if there is one), VLAN, IP and MAC addresses, you can also see who created this record and when it was last modified.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
 \centerline{\includegraphics[scale=0.5]{./modification_history}}
 \caption{Machine record}
