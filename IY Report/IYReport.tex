@@ -85,7 +85,7 @@ When I just started my placement I was frustrated with amount of different softw
 \label{fig:main_PSR2_page}
 \end{figure}
 
-Figure~\ref{fig:PSR2_SU_Room_layout} shows you Students Union computer room layout with computer names and serial numbers. Room comment holds code to unlock monitors from security straps. It also contains information when each computer was last time checked. So it contains quite 
+Figure~\ref{fig:PSR2_SU_Room_layout} shows Students Union computer room layout, with computer names and serial numbers. Room comment holds code to unlock monitors from security straps. It also contains information when each computer was last time checked. So it contains quite a lot of information, which is crucial to our work, and if for some reason Clares account will be locked or she leaves university we will loose access to that information, which is not held any where else.
 
 \begin{figure}[H]
 \begin{center}
@@ -97,7 +97,7 @@ Figure~\ref{fig:PSR2_SU_Room_layout} shows you Students Union computer room layo
 
 
 \section{Interzone}
-Interzone is a web based application that is used to manage records of network equipment in Aberystwyth University. On the main page you can see blank boxes in which you enter the information and search for record that contains specified information in it. You can search by IP address, MAC address, Owner's login, computer name etc. On the figure ~\ref{fig:main_interzone_page} you can see main Interzone page.
+Interzone is a web based front end for database that is used to manage records of network equipment in Aberystwyth University. On the main page you can search for record that contains specified information in it. You can search by IP address, MAC address, Owner's login, computer name etc. On the figure ~\ref{fig:main_interzone_page} you can see main Interzone page.
 
 \begin{figure}[H]
 \centering
@@ -106,7 +106,7 @@ Interzone is a web based application that is used to manage records of network e
 \label{fig:main_interzone_page}
 \end{figure}
 
-On figure ~\ref{fig:machine_record} you can see Interzone record for my computer.
+On figure ~\ref{fig:machine_record} you can see Interzone record of my computer.
 
 \begin{figure}[H]
 \centering
@@ -117,14 +117,14 @@ On figure ~\ref{fig:machine_record} you can see Interzone record for my computer
 
 It contains various information about the owner, owners department, telephone number (if there is one), VLAN, IP and MAC addresses, you can also see who created this record and when it was last modified.
 
-
-
 \begin{figure}[H]
 \centering
 \centerline{\includegraphics[scale=0.5]{./modification_history}}
 \caption{Machine record}
 \label{fig:modification_history}
 \end{figure}
+
+Information that you can gather from interzone is very useful. It is possible to check DHCP log to see if computer gets IP address, look at RADIUS logs that contains information if the user was successfully in authenticating 
 
 \section{Sunrise}
 Sunrise is a job management system that we use to keep track on current and past calls. It lets us to create new jobs, assign them to the technicians, add comments about the job, send emails to the user etc. On the figure ~\ref{fig:sunrise_main} you can see main Sunrise page, with all open and assigned to me jobs as well as the boxes where you can specify search criteria and search for the specific job.
