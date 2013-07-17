@@ -74,7 +74,7 @@ There are also two other main groups called "Business Information Systems" and "
 \section{People that I worked with}
 
 \chapter{Technical environment}
-When I just started my placement I was frustrated with amount of different software used in IS and how information was spread across all these systems. At the beginning I was introduced to Interzone, Sunrise, Astra, Recall, SharePoint, Aber FAQs, Outlook, Voyager. All used to store different information.
+When I just started my placement I was frustrated with amount of different software used in IS and how information was spread across all these systems. At the beginning I was introduced to Interzone, Sunrise, Astra, Recall, SharePoint, Aber FAQs, Outlook, Voyager. All used to store different king of information.
 
 \section{Criticism}One of the issues I found that if I wanted to find some procedures I would need to check Sharepoint as well as Aber FAQs, since I could find what I need on any of this systems. Information about data projectors in teaching rooms is kept on SharePoint in simple Excel spreadsheet, which can be altered by anyone. Computer room layout with computer serial numbers kept on one of the employees M drive and is accessible through the web. So if Clares account will be locked for some reason, non of the workshop members will be able to access that data. Good example is PSR2 maintenance application which was clearly written by Clare for herself to make her job easier. On figure ~\ref{fig:main_PSR2_page} you can see main PSR2 page, which contains some teaching rooms list that workshop technicians looks after.
 
@@ -97,7 +97,7 @@ Figure~\ref{fig:PSR2_SU_Room_layout} shows Students Union computer room layout, 
 
 
 \section{Interzone}
-Interzone is a web based front end for database that is used to manage records of network equipment in Aberystwyth University. On the main page you can search for record that contains specified information in it. You can search by IP address, MAC address, Owner's login, computer name etc. On the figure ~\ref{fig:main_interzone_page} you can see main Interzone page.
+Interzone is a front end web interface for the database that is used to manage records of network equipment in Aberystwyth University. On the main page you can search for record that contains specified information in it. It is possible search by IP address, MAC address, Owner's login, computer name etc. On the figure ~\ref{fig:main_interzone_page} you can see main Interzone page.
 
 \begin{figure}[H]
 \centering
@@ -120,11 +120,18 @@ It contains various information about the owner, owners department, telephone nu
 \begin{figure}[H]
 \centering
 \centerline{\includegraphics[scale=0.5]{./modification_history}}
-\caption{Machine record}
+\caption{Modification History}
 \label{fig:modification_history}
 \end{figure}
 
-Information that you can gather from interzone is very useful. It is possible to check DHCP log to see if computer gets IP address, look at RADIUS logs that contains information if the user was successfully in authenticating 
+Information gathered from interzone can be very useful when troubleshooting computer connection issues. It is possible to check DHCP log to see if computer gets IP address, look at the RADIUS logs that contain information if the user was successfully in authenticating in out system or not. Figure ~\ref{fig:interzone_radius} shows RADIUS log for my mobile phone, where it is clearly seen that at some point in time I was unable connect to the network due to the authentication problems. When working on helpdesk and troubleshooting somebody's devices which was not connecting to the internet or not working properly, interzone logs let me know what was going wrong.
+
+\begin{figure}[H]
+\centering
+\centerline{\includegraphics[scale=0.5]{./interzone_radius}}
+\caption{RADIUS log}
+\label{fig:interzone_radius}
+\end{figure}
 
 \section{Sunrise}
 Sunrise is a job management system that we use to keep track on current and past calls. It lets us to create new jobs, assign them to the technicians, add comments about the job, send emails to the user etc. On the figure ~\ref{fig:sunrise_main} you can see main Sunrise page, with all open and assigned to me jobs as well as the boxes where you can specify search criteria and search for the specific job.
