@@ -4,3 +4,4 @@ supported lecturers over the phone, educated them
 
 http://libweb.anglia.ac.uk/referencing/harvard.htm
 http://www.iit.edu/graduate_college/academic_affairs/pdfs/BiblioHelp2.pdf
+http://tex.stackexchange.com/questions/3587/how-can-i-use-bibtex-to-cite-a-web-page
