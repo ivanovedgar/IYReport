@@ -163,12 +163,23 @@ Figure ~\ref{fig:sunrise_job} represents an ordinary job. Each job has a unique 
 \caption{Sunrise Job Record}
 \label{fig:sunrise_job}
 \end{figure}
-1
-\section{SNMPC}
- Aberystwyth University is a large organization, having thousands of devices connected to the network. To provide reliable service for end users we need to ensure that our network functions properly and issues are fixed as soon as possible. Network equipment such as: computers, printers, IP cameras, SALTO locks, wireless access points, VoIP phones all relay on ability to communicate and send/receive data, so it is crucial to ensure that there is working network connection at all times. To monitor all our switches, routers, servers, workstations and printers IS uses program called SNMPc, developed by Castle Rock Computing. SNMPC is a Distributed Network Manager \cite{SNMPc} that uses SNMP, which stands for Simple Network Management Protocol.
+
+\section{SNMPc}
+Aberystwyth University is a large organization, having thousands of devices connected to its network. To provide reliable service for end users we need to ensure that our network functions properly and issues are fixed as soon as possible. Network equipment such as: computers, printers, IP cameras, SALTO locks, wireless access points, VoIP phones all relay on ability to communicate (send/receive data), so it is crucial to ensure that there is working network connection at all times.  To monitor all our switches, routers, servers, workstations and printers IS uses program called SNMPc, developed by Castle Rock Computing. SNMPC is a Distributed Network Manager \cite{SNMPc}
+that uses SNMP protocol which stands for Simple Network Management Protocol. SNMPc makes it easier to look after whole network and network devices by identifying unresponsive equipment or path with the issues. Figure ~\ref{fig:SNMPc_main} shows map of our network. Green or purple icon shows that all pollable nodes in them are contactable. If icon turns red it indicates that at least one node in this sub map is not contactable any more \cite{SNPMcSharePoint}. Buy just looking at the map it is possible to identify if there are any issues on the network and if there are try to fix them. I didn't use this application much since there are other people responsible for keeping our network up and running, but I found it quite interesting and useful to look at it time to time since I could see and explore our network in graphical view.
+
+\begin{figure}[H]
+\centering
+\centerline{\includegraphics[scale=0.5]{./SNMPc_main}}
+\caption{University network map in SNMPc application}
+\label{fig:SNMPc_main}
+\end{figure}
+
 
 \section{VoIP Phones}
 \section{Public Workstation Computers}
+\section{REG}
+
 
 \chapter{What I did}
 Describe your 'routine' weekly duties. Spend a bit more time on areas where you have
