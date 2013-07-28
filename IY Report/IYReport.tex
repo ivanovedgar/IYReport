@@ -164,9 +164,8 @@ Figure ~\ref{fig:sunrise_job} represents an ordinary job. Each job has a unique 
 \label{fig:sunrise_job}
 \end{figure}
 
-\section{SNMPc}
-Aberystwyth University is a large organization, having thousands of devices connected to its network. To provide reliable service for end users we need to ensure that our network functions properly and issues are fixed as soon as possible. Network equipment such as: computers, printers, IP cameras, SALTO locks, wireless access points, VoIP phones all relay on ability to communicate (send/receive data), so it is crucial to ensure that there is working network connection at all times.  To monitor all our switches, routers, servers, workstations and printers IS uses program called SNMPc, developed by Castle Rock Computing. SNMPC is a Distributed Network Manager \cite{SNMPc}
-that uses SNMP protocol which stands for Simple Network Management Protocol. SNMPc makes it easier to look after whole network and network devices by identifying unresponsive equipment or path with the issues. Figure ~\ref{fig:SNMPc_main} shows map of our network. Green or purple icon shows that all pollable nodes in them are contactable. If icon turns red it indicates that at least one node in this sub map is not contactable any more \cite{SNPMcSharePoint}. Buy just looking at the map it is possible to identify if there are any issues on the network and if there are try to fix them. I didn't use this application much since there are other people responsible for keeping our network up and running, but I found it quite interesting and useful to look at it time to time since I could see and explore our network in graphical view.
+\section{SNMPc network manager}
+Aberystwyth University is a large organization, having thousands of devices connected to its network. To provide reliable service for end users we need to ensure that our network functions properly and issues are fixed as soon as possible. Network equipment such as: computers, printers, IP cameras, SALTO locks, wireless access points, VoIP phones all relay on ability to communicate (send/receive data), so it is crucial to ensure that there is working network connection at all times.  To monitor all our switches, routers, servers, workstations and printers IS uses program called SNMPc, developed by Castle Rock Computing. SNMPC is a Distributed Network Manager \cite{SNMPc} that uses SNMP protocol which stands for Simple Network Management Protocol. SNMPc makes it easier to look after whole network and network devices by identifying unresponsive equipment or path with the issues. Figure ~\ref{fig:SNMPc_main} shows map of our network. Green or purple icon shows that all pollable nodes in them are contactable. If icon turns red it indicates that at least one node in this sub map is not contactable any more \cite{SNPMcSharePoint}. Buy just looking at the map it is possible to identify if there are any issues on the network and if there are try to fix them. I didn't use this application much since there are other people responsible for keeping our network up and running, but I found it quite interesting and useful to look at it time to time since I could see and explore our network in graphical view.
 
 \begin{figure}[H]
 \centering
@@ -180,13 +179,18 @@ that uses SNMP protocol which stands for Simple Network Management Protocol. SNM
 \section{REG}
 \section{Computers}
 \section{Pcounter}
+PCounter is an application that allows to  manage user print profiles. It allows to see print balance for everybody in university, it is possible to increase or decrease balance on the account, see print history and produce reports. I used it mainly for adding money to the user accounts when print credit machine was broken and users were coming to the desk. I used this application only when working on Help Desk with Customer Services team. 
+
 \section{Workshop tech env}
 Computer Workshop Technical Environment is probably most unusual in comparison to the rest of IS. Here we not only deal with software related issues, but a hardware as well: soldiering, computer part replacement, cleaning after spillages, equipment shifting.
-When term starts we tend to get quite a lot of laptops that fail to boot in to OS. Usually it is caused by dammaged HDD In workshop we have disk cloner, which is capable of making one-to-one copy. It becomes extremely useful since disk copier can skip broken sectors, filling them with zeros on destination drive and then it is possible to copy at least some data from working copy.
+When term starts we tend to get quite a lot of laptops that fail to boot in to OS. Usually it is caused by damaged HDD having broken sectors that can not be red by running software. In such cases disk cloner becomes extremely useful since it can skip broken sectors, filling them with zeros on destination drive making it possible to copy at least some data from working copy.
 
+We also tend to get requests to restore lost data. In such case we use R-Studio program which performs scan o whole drive and then displays all data that is available for recovery.
 
-by can DJ PRO now includes the ability to skip bad sectors during a copy to continue with the copy process
-Disk Copier, R-Studio, Symantec Ghost, Sysinternals Suite,
+Symantec Ghost this is application that we use to make one-to-one copy of HDD or just one partition of it. It is possible to store copy as an image file as well. It is heavily used during new version of Windows deployment on Public Workstation computers. After reference Windows installation is complete and all necessary programs are installed, whole HDD is being copied in to the file as is, afterwards PSV computers join multicast session and image captured before is applied to all of the machines. It is very nice technique sine there is no need to spend hours at each computer installing Windows with all corresponding applications required for education needs. Taking in account that new updates are released almost weekly we make new reference image every year and deploy it over the summer when computers are not in great use. In public use around campus there are almost 500 (?) computers, so deploying windows on 60 computers in 3-5 hours is really good achievement.
+
+Sysinternals Suite is a collection of tools released  by (Microsoft or Mark russinovich?), form this pack I used only Active Dirctory Explorer and XXXXXXX to see what connection computer makes.
+  
 \chapter{What I did}
 Describe your 'routine' weekly duties. Spend a bit more time on areas where you have
 responsibility or have put in effort e.g. summer builds, FAQS, summer course
