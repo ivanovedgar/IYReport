@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper,headinclude=true]{report}
+\documentclass[10pt,a4paper,headinclude=true,twoside]{report}
 \usepackage[latin1]{inputenc}
 \usepackage[a4paper]{geometry}
 \usepackage{a4wide}
@@ -13,7 +13,11 @@
 \usepackage{setspace}
 
 \usepackage{fancyhdr}
-\pagestyle{fancyplain}
+\pagestyle{fancy}
+
+\fancyhead[LE,RO]{\slshape  \rightmark}
+\fancyhead[LO,RE]{\slshape  \leftmark}
+\fancyfoot[C]{\thepage}
 
 %\lhead{Edgar Ivanov}
 %\rhead{Industrial Year Report}
