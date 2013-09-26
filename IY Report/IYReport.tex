@@ -63,7 +63,7 @@ IS department provides the University with Library, IT, Management Information a
 \label{fig:i-s-hierarchy-tree-march-2012}
 \end{figure}
 
-IS department is located in Hugh Owen building and takes over 40 \% of the E floor.  Figure~\ref{fig:isfloorplan}  represents  IS staff location plan. Most of the IS department employees are based in the open plan office, with the team leaders located in the offices at the edges. My workplace was in the Computer Workshop, which is separated from the main office.
+IS department is located in Hugh Owen building and takes over 40 \% of the E floor.  Figure~\ref{fig:isfloorplan}  represents  IS staff location plan. Most of the IS department employees are based in the open plan office, with the team leaders located in the offices at the edges. My workplace was in the computer workshop, which is separated from the main office.
 
 \begin{figure}[H]
 \centering
@@ -115,26 +115,26 @@ As you can see, the diversity of customers is wide, so is the variety of issues 
 \chapter{Technical environment}
 When I've just started my placement I was amazed by the amount of different software used in IS and how the information was spread across the systems. At the beginning I was introduced to the Interzone, Sunrise, Astra, Recall, SharePoint, Aber FAQs, Outlook, Voyager. All of these use to store different kind of information and help people with their day-to-day duties. In this section I will go through technical environment and describe what software and tools I use when doing my job.
   
-\section{My Work Environment (Computer Workshop)}
+\section{My work environment (Computer workshop)}
 Computer workshop is an open plan office as shown on figure ~\ref{fig:isfloorplan} that consists of our workbenches and team leaders office in the corner. At the beginning of my placement I was given a place at the workbench and a computer capable of doing simple office tasks. There are tools in the computer workshop that you would expect to see in any more or less advanced household: this includes screwdrivers, pliers, soldiering kit, heat gun, drill, hex keys, different types of wrenches. There also are some specific tools that are used only for computer hardware diagnostic and repair: power adapters and PSUs (power supply units), PATA and SATA computer data cables, HDD (Hard Disk Drive) cloners, magnifying glass to detect liquid damaged components, all of our workplaces are grounded and have antistatic wrist straps and anti-static mats to prevent electrostatic discharge when working with sensitive computer components, network cable testers, multimeter. We also have a store room to keep new computer components such as new HDDs, cables, monitors, laptop screens, PSUs in case we need any of them during a repair.    
 
-Computer Workshop Technical Environment is very unusual in comparison to the rest of the IS. We not only deal with software related issues here, but the hardware as well: soldiering, computer part replacement, cleaning the equipment after spillages, equipment shifting, hardware diagnostics, all unusual jobs come here.
+Computer workshop technical environment is very unusual in comparison to the rest of the IS. We not only deal with software related issues here, but the hardware as well: soldiering, computer part replacement, cleaning the equipment after spillages, equipment shifting, hardware diagnostics, all unusual jobs come here.
 
 When a term starts we tend to get quite a lot of laptops that fail to boot in to the OS. Usually it is caused by damaged HDD, having broken sectors that cannot be read. In such cases Diskology Disk Jockey PRO hard disk cloner\cite{DiskCloner} becomes extremely useful since it can skip broken sectors, filling them with zeros on the destination drive and making it possible to copy the data from the source drive. Some files may become damaged, but this is still better than having no data at all. We also tend to get requests to restore lost data from USB pen drives and SD flash cards - then we use R-Studio, a program which performs the scan of the whole drive and then displays all the data that is available for recovery. 
 
-Symantec Ghost is a disk cloning program, capable of making one-to-one copy of any storage media (HDD, SD Card, USB pen drive). Symantec Ghost is used heavily during MS Windows OS deployment on public computers. When reference Windows OS installation is complete and all the necessary programs are installed, the whole HDD is being captured in to the file, then computers join multicast session and the image that has been captured before is applied to all of the machines. It is a very effective technique, because there is no need to spend hours with each computer installing Windows OS with all the corresponding applications. Usually, we deploy image to the 50-100 computers in one go, the size of the image is around 50 GB(that is MS Windows 7 OS, with almost 200 applications required for the education use) and that is when Symantec Ghost multicast ability becomes useful, data is sent from one source to all the computers simultaneously in a single transmission and does not overload our network. We can have 50-100 computers ready for use within 5-12 hours using this technique, which couldn't be achieved without it.
+Symantec Ghost is a disk cloning program, capable of making one-to-one copy of any storage media (HDD, SD Card, USB pen drive). Symantec Ghost is used heavily during MS Windows OS deployment on public computers. When reference MS Windows OS installation is complete and all the necessary programs are installed, the whole HDD is being captured in to the file, then computers join multicast session and the image that has been captured before is applied to all of the machines. It is a very effective technique, because there is no need to spend hours with each computer installing MS Windows OS with all the corresponding applications. Usually, we deploy image to the 50-100 computers in one go, the size of the image is around 50 GB(that is MS Windows 7 OS, with almost 200 applications required for the education use) and that is when Symantec Ghost multicast ability becomes useful, data is sent from one source to all the computers simultaneously in a single transmission and does not overload our network. We can have 50-100 computers ready for use within 5-12 hours using this technique, which couldn't be achieved without it.
 
 To remove viruses from the computers we use Sophos Endpoint Antivirus and Microsoft Security Essentials, both of these applications proved to be effective.
  
 \section{Interzone}
 Interzone is a front end web interface for the database that is used to manage records of the network equipment in Aberystwyth University. It contains comprehensive data about the device including information about the owner. All the equipment connected to the University network has its MAC (media access control) address registered in our database, otherwise our DHCP server will not assign IP address to the device and without the IP address a device will not be able to use our network facilities.
 
-On the main page it is possible to specify search criteria and look for devices that match the request. Some of the search criteria are: IP address, MAC address, Owner's login, computer name. On the figure ~\ref{fig:main_interzone_page} you can see the main Interzone page.
+On the main page it is possible to specify search criteria and look for devices that match the request. Some of the search criteria are: IP address, MAC address, owner's login, computer name. On the figure ~\ref{fig:main_interzone_page} you can see the main Interzone page.
 
 \begin{figure}[H]
 \centering
 \centerline{\includegraphics[scale=0.5]{./main_interzone_page}}
-\caption{Main Interzone Page}
+\caption{Main Interzone page}
 \label{fig:main_interzone_page}
 \end{figure}
 
@@ -152,7 +152,7 @@ It contains various information about the owner, owners department, telephone nu
 \begin{figure}[H]
 \centering
 \centerline{\includegraphics[scale=0.5]{./modification_history}}
-\caption{Modification History}
+\caption{Modification history}
 \label{fig:modification_history}
 \end{figure}
 
@@ -170,7 +170,7 @@ Interesting reports are generated from the information contained in the database
 \begin{figure}[H]
 \centering
 \centerline{\includegraphics[scale=0.5]{./interzone_statistics}}
-\caption{Interzone Statistics}
+\caption{Interzone statistics}
 \label{fig:interzone_statistics}
 \end{figure}
 
@@ -180,7 +180,7 @@ Sunrise is another front end web interface for the database that I use to keep t
 \begin{figure}[H]
 \centering
 \centerline{\includegraphics[scale=0.5]{./sunrise_main}}
-\caption{Sunrise Main Page}
+\caption{Sunrise main page}
 \label{fig:sunrise_main}
 \end{figure}
 
@@ -189,7 +189,7 @@ Figure ~\ref{fig:sunrise_search} shows all the jobs that contain my email addres
 \begin{figure}[H]
 \centering
 \centerline{\includegraphics[scale=0.4]{./sunrise_search}}
-\caption{Sunrise Search}
+\caption{Sunrise search}
 \label{fig:sunrise_search}
 \end{figure}
 
@@ -198,12 +198,12 @@ Figure ~\ref{fig:sunrise_job} represents a job to be completed. Each job has a u
 \begin{figure}[H]
 \centering
 \centerline{\includegraphics[scale=0.5]{./sunrise_job}}
-\caption{Sunrise Job Record}
+\caption{Sunrise call record}
 \label{fig:sunrise_job}
 \end{figure}
 
 \section{REG}
-Whenever somebody becomes a part of the University a user account is created for them. Username is allocated by the system and usually consists from three letters and some digits if required. For example mine is "edi1". A user can then use it to access his emails, e-journals, manage their records and login to all the systems in the University (if they have access to them). We have web interface called REG to help us manage the accounts. I was mainly using it for unlocking the user accounts while working on the help desk, issuing new passwords, verifying identity of the people at the desk. One of the options I had was to make temporary password for any user, so that I could use their login if needed. It was quite useful when I needed to migrate user profile folder on Windows OS and user was away or it was not feasible for them to come to the workshop. In such cases I would create a temporary password, login on to the computer using their credentials, log off and revert the password back. I could then copy all the files from the one machine to the another and be sure that everything will work after the machine is delivered and user logs in.
+Whenever somebody becomes a part of the University a user account is created for them. Username is allocated by the system and usually consists from three letters and some digits if required. For example mine is "edi1". A user can then use it to access his emails, e-journals, manage their records and login to all the systems in the University (if they have access to them). We have web interface called REG to help us manage the accounts. I was mainly using it for unlocking the user accounts while working on the help desk, issuing new passwords, verifying identity of the people at the desk. One of the options I had was to make temporary password for any user, so that I could use their login if needed. It was quite useful when I needed to migrate user profile folder on MS Windows OS and user was away or it was not feasible for them to come to the workshop. In such cases I would create a temporary password, login on to the computer using their credentials, log off and revert the password back. I could then copy all the files from the one machine to the another and be sure that everything will work after the machine is delivered and user logs in.
 \section{SNMPc network manager}
 Aberystwyth University is a large organization, having thousands of devices connected to its network. To be able to provide reliable service to the end users we need to ensure that our network functions properly and issues are fixed as soon as possible. Network equipment, such as computers, printers, IP cameras, SALTO locks, wireless access points, VoIP phones all relay on ability to communicate (send/receive data), so it is crucial to ensure that there is a working network connection at all times. To monitor our switches, routers, servers, workstations and printers IS uses a program called SNMPc, developed by Castle Rock Computing. SNMPc is a Distributed Network Manager \cite{SNMPc} that uses SNMP protocol(Simple Network Management Protocol) to communicate and monitor the devices. SNMPc makes it easier to look after the whole network and network devices by identifying unresponsive equipment or network path with the issues and highlighting problematic devices on the network map. 
 
@@ -230,7 +230,7 @@ Here at Aberystwyth University we have hundreds of computers used across campuse
 \subsection{PSVs}
 PSVs (Public Service) are computers that can be used by anybody who have University's user account. IS manages around 500 public computers across the campuses \cite{PSVs2}. We have two different versions of Optiplex 7010 computers. One model with higher specifications for teaching stations and USFF model for students use. 
 
-This summer we deployed new USFF Dell Optiplex 7010 \cite{PSVs} computers. The old ones were almost seven years old and didn't match current student and staff needs. New computers are more powerful, equipped with Intel i3 processors, 4GB of RAM and 320 GB HDDs. All PSVs run MS Windows 7 OS and are "PSV" domain members which makes their management more easy, there are more than 200 applications installed for the academic use. A few computer rooms (from 25 to 100 PCs in one room) are available for teaching purposes and for general use.
+This summer we deployed new USFF Dell Optiplex 7010 \cite{PSVs} computers. The old ones were almost seven years old and didn't match current student and staff needs. New computers are more powerful, equipped with Intel i3 processors, 4GB of RAM and 320 GB HDDs, as well as have nice design(monitor and computer are mounted on the stand which has cable management facility and makes it look more tidy). All PSVs run MS Windows 7 OS and are "PSV" domain members which makes their management more easy, there are more than 200 applications installed for the academic use. A few computer rooms (from 25 to 100 PCs in one room) are available for teaching purposes and for general use.
 \begin{figure}[H]
 \centering
 \centerline{\includegraphics[scale=0.5]{./PSVs}}
@@ -265,7 +265,7 @@ On the figure ~\ref{fig:main_PSR2_page} you can see the main PSR2 page, which co
 \label{fig:main_PSR2_page}
 \end{figure}
 
-Figure~\ref{fig:PSR2_SU_Room_layout} shows Students Union computer room layout, with the computers names and serial numbers. Room comment holds a code to unlock monitors from the security straps. It also contains the information when each computer was checked last.
+Figure~\ref{fig:PSR2_SU_Room_layout} shows Students Union computer room layout, with the computers names and serial numbers. "Room comment" field holds a code to unlock monitors from the security straps. It also contains the information when each computer was checked last.
 
 It contains quite a lot of information, which is crucial to our work, and if, for some reason, the employees account is locked we will lose access to that information, which is not held anywhere else.
 
@@ -313,7 +313,7 @@ When all the casing was taken away I spotted the problem straight away: it was t
 \begin{figure}[H]
 \centering
 \centerline{\includegraphics[scale=0.4]{./powerJack}}
-\caption{Loose power jack on the laptop}
+\caption{Loose power jack}
 \label{fig:power jack}
 \end{figure}
 
@@ -331,12 +331,12 @@ During the placement I have completed the Self-Paced Mac Technician Course. I ha
 The majority of my jobs are related to hardware or software maintenance. It's a pity that I didn't have an opportunity to learn a new programming language in the organization which develops new software. However I gained experience in the computer system administration, which provides me with the opportunity to apply for a wider variety of jobs. I think this will be a valuable experience which will help me to stand out.
 
 \chapter{Critical evaluation}
-The main purpose of taking the placement for me was utilizing and evolving the skill set I had. At the end of the year I can say that the placement was of huge benefit for my career, however there wasn't particular theoretical knowledge gained which could help me with the further studies. I learnt a lot of new things: the ways of fixing diverse software and hardware issues, Windows OS configuration and domains, user account management, provision of the centrally located resources like printing and storage, user support, server side hardware and software configuration; I have also become an Apple Certified Technician, building the knowledge about the equipment produced by the company and the ways to deal with it. However, I think that the knowledge gained during the placement would not help me much with my academic studies, because all the skills developed are not specific to my study course. That doesn't make it useless or less beneficial, though: it was a unique opportunity to get an insight and work within the IT sector, develop the skills so essential for the environment, expand and utilize the knowledge I possessed.
+The main purpose of taking the placement for me was utilizing and evolving the skill set I had. At the end of the year I can say that the placement was of huge benefit for my career, however there wasn't particular theoretical knowledge gained which could help me with the further studies. I learnt a lot of new things: the ways of fixing diverse software and hardware issues, MS Windows OS configuration and domains, user account management, provision of the centrally located resources like printing and storage, user support, server side hardware and software configuration; I have also become an Apple Certified Technician, building the knowledge about the equipment produced by the company and the ways to deal with it. However, I think that the knowledge gained during the placement would not help me much with my academic studies, because all the skills developed are not specific to my study course. That doesn't make it useless or less beneficial, though: it was a unique opportunity to get an insight and work within the IT sector, develop the skills so essential for the environment, expand and utilize the knowledge I possessed.
 \subsubsection{In IS}
 When I joined the IS department I was surprised by the amount of people working there. There should be around 60 people working in the department to support the University's library and IT stuff. I don't think that students and staff realize how much work is done behind the scenes to ensure that university functions. There is a team supporting networking; the one that develops new applications, other people deal with the books; I was placed within the team providing computer hardware and software support. I have had some previous experience in supporting MS Windows OS for the friends and the family as well as having hardware knowledge since I have built a few computers from the components before. I think I was placed within this team because I have expressed a deep interest in the computer hardware on the interview day.
 
 \subsubsection{At work}
-During the first few weeks I was afraid that my knowledge may not be sufficient enough to perform well at work, but as the time passed I got the ropes. I have noticed that there are similarities in the software faults like MS Outlook, EndNote, VPN connections, browser problems and, of course, Windows OS itself. Nobody expected me to learn everything at once and I was taught gradually over the year. I have gained a lot of knowledge during the placement. In the workshop I learnt the technical stuff like taking laptops and PCs apart, improved my soldiering skills, learnt some different techniques of trouble shooting hardware and software issues. I enjoyed working with hardware because it was particularly interesting to me. The people I was working with were very helpful and could provide me with advice on any question that I had. My team leader was good as well providing me with support when I needed it, however he could be quite demanding, asking me to do another jobs right in the middle of the work I was doing or just before the visit to the customer that was arranged. I suppose it will happen quite often in the industry I intend to work in, because it is certainly a fast-paced one, so multi-tasking is a key. It took me around three months to understand how the organization and systems functioned to perform the jobs on my own without asking for help. By the end of the day it was about knowing some small bits and pieces of information to perform well at work. I was on call once and a gentleman asked me why his phone didn't work. It was the first time then that I had to deal with such query and I had no idea of who was responsible for configuring the phones in IS. I took the contact details of the customer and returned to the workshop, where I was told that phones were managed by the Systems team and I should speak to them. I did, then, redirect the customer to them.
+During the first few weeks I was afraid that my knowledge may not be sufficient enough to perform well at work, but as the time passed I got the ropes. I have noticed that there are similarities in the software faults like MS Outlook, EndNote, VPN connections, browser problems and, of course, MS Windows OS itself. Nobody expected me to learn everything at once and I was taught gradually over the year. I have gained a lot of knowledge during the placement. In the workshop I learnt the technical stuff like taking laptops and PCs apart, improved my soldiering skills, learnt some different techniques of trouble shooting hardware and software issues. I enjoyed working with hardware because it was particularly interesting to me. The people I was working with were very helpful and could provide me with advice on any question that I had. My team leader was good as well providing me with support when I needed it, however he could be quite demanding, asking me to do another jobs right in the middle of the work I was doing or just before the visit to the customer that was arranged. I suppose it will happen quite often in the industry I intend to work in, because it is certainly a fast-paced one, so multi-tasking is a key. It took me around three months to understand how the organization and systems functioned to perform the jobs on my own without asking for help. By the end of the day it was about knowing some small bits and pieces of information to perform well at work. I was on call once and a gentleman asked me why his phone didn't work. It was the first time then that I had to deal with such query and I had no idea of who was responsible for configuring the phones in IS. I took the contact details of the customer and returned to the workshop, where I was told that phones were managed by the Systems team and I should speak to them. I did, then, redirect the customer to them.
 
 \subsubsection{Interacting with people}
 It was about interacting with people from the other teams as well, if I needed working network point at some location, I had to speak with somebody from the Networking team and they would do it for me. During the first weeks of my placement when I needed assistance from the other teams I would be told to "go and speak to those people, but no one would explain me who to speak to in particular or what should I ask for? I had to find it out myself and I did look silly asking wrong questions in the beginning, indeed. But that is the way you learn to do things.
